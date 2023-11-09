@@ -1,0 +1,23 @@
+.navbar-monogram {
+    position: sticky;
+    top: 0;
+    background-color: var(--main);
+    color: var(--secondary);
+}
+
+.monogram-container {
+    position: relative;
+    top: 0;
+}
+
+.links-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.links-container a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--secondary);
+    
+}
