@@ -1,23 +1,38 @@
 .navbar-monogram {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
     position: sticky;
     top: 0;
     background-color: var(--main);
     color: var(--secondary);
+    box-shadow: 1px 11px 35px #00000026;
 }
 
 .monogram-container {
-    position: relative;
-    top: 0;
+    display: flex;
+    align-items: center;
 }
 
 .links-container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 2em;
+    font-size: 0.85rem;
+    line-height: 1.5;
 }
 
-.links-container a {
+.links-container a{
     text-decoration: none;
     text-transform: uppercase;
     color: var(--secondary);
-    
+}
+
+.links-container .shop {
+    font-weight: 700;
+}
+
+.cart {
+    fill: var(--secondary);
 }
