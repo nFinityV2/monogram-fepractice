@@ -19,18 +19,26 @@
     justify-content: flex-end;
     align-items: center;
     column-gap: 2em;
-    font-size: 0.85rem;
-    line-height: 1.5;
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    line-height: 1;
 }
 
-.links-container a{
+.links-container li{
+    cursor: pointer;
+    list-style: none;
+    text-transform: uppercase;
     text-decoration: none;
     text-transform: uppercase;
+    color: var(--secondary-light);
+}
+
+.links-container li:hover {
     color: var(--secondary);
 }
 
 .links-container .shop {
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .cart {
