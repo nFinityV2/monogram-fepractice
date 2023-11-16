@@ -1,4 +1,15 @@
 .hero-monogram {
-    background-image: url('../../assets/shop_cta_xl_896f6b8270.jpg');
-    max-width: 100%;
+    display: flex;
+    align-items: stretch;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.hero-monogram img {
+    object-fit: contain;
+    object-position: 50% 0;
+    width: 100%;
 }

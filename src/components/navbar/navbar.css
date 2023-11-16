@@ -1,9 +1,14 @@
+.navbar-container {
+    margin: 10px;
+}
+
 .navbar-monogram {
     display: flex;
     padding: 10px;
     justify-content: space-between;
-    position: sticky;
+    position: relative;
     top: 0;
+    z-index: 100;
     background-color: var(--main);
     color: var(--secondary);
     box-shadow: 1px 11px 35px #00000026;
