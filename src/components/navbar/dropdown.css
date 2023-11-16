@@ -1,0 +1,19 @@
+.none {
+    display: none;
+}
+
+.show {
+    display: block;
+    margin: auto;
+}
+
+.dropdown {
+    position: absolute;
+    background-color: var(--off-white);
+    padding: 0em 1em;
+    margin: 1em;
+}
+
+.dropdown li {
+    color: var(--dark);
+}

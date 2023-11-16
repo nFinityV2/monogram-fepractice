@@ -1,6 +1,6 @@
 import './navbar.css';
-import '../../data/navbarData.js'
 import { navbarData } from '../../data/navbarData.js';
+import NavItems from './NavItems.jsx';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
 import CartIcon from '../../assets/cart.svg'
@@ -14,26 +14,11 @@ const Navbar = () => {
             </div>
             <ul className="links-container">
                 {
-                    navbarData.map((item) => {
-                        return <li key={item.id}>{item.title}</li>
+                    navbarData.map((item, index) => {
+                        return <NavItems items={item} key={index}/>
                     })
-                    
                 }
                 <img className='cart' src={CartIcon}  alt='shopping-cart'/>
-                <select name="currency" id="currency-select">
-                    {
-                        navbarData.at(5).submenu.map((currency, index) => {
-                            return <option key={index}>{currency}</option>
-                        })
-                    }
-                </select>
-                {/* <a href="#">How it works</a>
-                <a href="#">Workflows <FontAwesomeIcon icon={faCaretDown} /></a>
-                <a href="#">Download</a>
-                <a href="#">Blog</a>
-                <a href="#">Support</a>
-                <a className="shop" href="#">Shop</a>
-                <img className='cart' src={CartIcon}  alt='shopping-cart'/> */}
             </ul>
         </nav>
     </div>
