@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import NavItems from './NavItems';
+import NavItems from '../NavItems';
 import './dropdown.css';
 
 const Dropdown = ({submenu, dropdown}) => {

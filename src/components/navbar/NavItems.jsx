@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import Dropdown from './Dropdown';
+import Dropdown from './dropdown/Dropdown.jsx';
 import { useState } from 'react';
 
 const NavItems = ({items}) => {
